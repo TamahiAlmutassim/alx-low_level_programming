@@ -10,19 +10,33 @@
  */
 int print_sign(int n)
 {
+    char sign;  // Define a character to hold the sign character
+
     if (n > 0)
     {
-        _putchar('+');  /* Print plus sign for positive number */
+        sign = '+'; // Set sign to '+'
+    }
+    else if (n == 0)
+    {
+        sign = '0'; // Set sign to '0'
+    }
+    else
+    {
+        sign = '-'; // Set sign to '-'
+    }
+
+    _putchar(sign); // Print the determined sign character
+
+    if (n > 0)
+    {
         return (1);
     }
     else if (n == 0)
     {
-        _putchar('0');  /* Print zero for zero */
         return (0);
     }
-    else if (n < 0)
+    else
     {
-        _putchar('-');  /* Print minus sign for negative number */
         return (-1);
     }
 }
