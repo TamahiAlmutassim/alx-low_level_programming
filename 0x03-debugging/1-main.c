@@ -1,22 +1,18 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * positive_or_negative - Determines if a number is positive, negative, or zero
- * @n: The integer to check
+ * main - Entry point, avoids an infinite loop
  *
- * Return: No return value (void)
- */
-void positive_or_negative(int n);
-
-/**
- * main - Test function for positive_or_negative
- * Return: 0
+ * Return: Always 0
  */
 int main(void)
 {
-    int i;
+	int i;
 
-    i = 0;
-    positive_or_negative(i);
-    return (0);
+	printf("Infinite loop incoming :(\n");
+	i = 0;
+
+
+	printf("Infinite loop avoided! \\o/\n");
+	return (0);
 }
