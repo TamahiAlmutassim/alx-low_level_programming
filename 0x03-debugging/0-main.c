@@ -1,22 +1,17 @@
 #include "main.h"
 
 /**
- * positive_or_negative - Determines whether an integer is positive, negative, or zero.
- * @n: The integer to check.
+ * main - Tests the function that prints if an integer is positive or negative
  *
- * Return: No return value (void).
- */
-void positive_or_negative(int n);
-
-/**
- * main - Test function for positive_or_negative.
- * Return: 0.
+ * Return: Always 0
  */
 int main(void)
 {
-	int i;
+    int i;
 
-	i = 0;
-	positive_or_negative(i);
-	return (0);
+    i = 0;
+    positive_or_negative(i);
+
+    return (0);
 }
+
