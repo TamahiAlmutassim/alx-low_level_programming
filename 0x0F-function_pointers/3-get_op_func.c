@@ -4,7 +4,7 @@
 /**
  * get_op_func - Selects which function to do
  * @s: fuction argument.
- * Return: A pointer to the function corresponding to the operator given as a parameter.
+ * Return: A pointer to the function.
  */
 int (*get_op_func(char *s))(int, int)
 {
